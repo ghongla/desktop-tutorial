@@ -1,0 +1,12 @@
+-
+ name: Play 1
+ hosts: localhost
+ tasks:
+   - name: execute command 'date'
+     command: date
+
+   - name: Install httpd service
+     yum: 
+       name: httpd
+       state: present
+       
